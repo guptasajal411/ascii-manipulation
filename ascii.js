@@ -14,6 +14,7 @@ app.post("/", function(req, res){
         horizontalLayout: "fitted",
         whitespaceBreak: true
     }));
+    res.sendFile(__dirname + "/result.html");
 })
 
 app.listen(3000, function(){
