@@ -10,14 +10,10 @@ app.get("/", function(req, res){
 })
 
 app.post("/", function(req, res){
-    figlet(req.body.inputText, function(err, data) {
-        if (err) {
-            console.log('Something went wrong...');
-            console.dir(err);
-            return;
-        }
-        console.log(data)
-    });
+    console.log(figlet.textSync(req.body.inputText, {
+        horizontalLayout: "fitted",
+        whitespaceBreak: true
+    }));
 })
 
 app.listen(3000, function(){
