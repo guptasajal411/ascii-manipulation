@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
 const figlet = require("figlet");
+
+app.use(bodyParser.urlencoded({extended: true}));
  
 figlet("Sajal Gupta", function(err, data) {
     if (err) {
