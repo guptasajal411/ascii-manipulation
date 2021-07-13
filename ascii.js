@@ -11,6 +11,10 @@ figlet("Sajal Gupta", function(err, data) {
     console.log(data)
 });
 
+app.get("/", function(req, res){
+    res.sendFile(__dirname + "/index.html");
+})
+
 app.listen(3000, function(){
     console.log("listening to port 3000...");
 })
