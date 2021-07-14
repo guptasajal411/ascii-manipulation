@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const figlet = require("figlet");
+var colors = require('colors');
 
 app.use(bodyParser.urlencoded({extended: true}));
  
@@ -18,5 +19,5 @@ app.post("/", function(req, res){
 })
 
 app.listen(3000, function(){
-    console.log("listening to port 3000...");
+    console.log("listening to port 3000...".red);
 })
