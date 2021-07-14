@@ -1,7 +1,7 @@
 # ASCII Manipulation
 
-Convert your boring text to something cool! Use this tool to get ASCII version of your favorite text. Make with Node.js and Express.js :D
-Dependencies: Express, Body Parser, Figlet.
+Convert your boring text to something cool! Use this web app to create ASCII version of your text in your favorite colors. Made with Node.js and Express.js :D <br>
+Dependencies: Express, Body Parser, Figlet, Colors.
 
 # How to use this? 🤔
 
@@ -10,15 +10,16 @@ Dependencies: Express, Body Parser, Figlet.
 
 2. Use NPM (Node Package Manager) to install dependencies for this project. <br>
 ```npm install express``` <br>
-```npm install body-parser``` and <br>
-```npm install figlet```
+```npm install body-parser``` <br>
+```npm install figlet``` and <br>
+```npm install colors```
 
 3. Now use Node.js to start the main server: <br>
 ```node ascii.js```
 
 4. Go to `localhost:3000` on your browser. Enter your text to the input box. 
 
-5. Now your text will be sent to the server. The ASCII version of your text will be displayed on your console (where you entered npm and node commands). After that, the server will send the result HTML to the browser as a response. For converting another text to ASCII, click on `Give another input!` button. 
+5. Now your text and chosen color will be sent to the server. The ASCII version of your text will be displayed with the color properties on your console (where you entered NPM and Node commands). After that, the server will send the result HTML to the browser as a response. For converting another text to ASCII, click on `Give another input!` button. 
 
 # Screenshots 📸
 
