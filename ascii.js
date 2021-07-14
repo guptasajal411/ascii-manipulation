@@ -44,11 +44,11 @@ app.post("/", function (req, res) {
                 whitespaceBreak: true
             }).rainbow);
             break;
-        case "brightWhite":
+        case "america":
             console.log(figlet.textSync(req.body.inputText, {
                 horizontalLayout: "fitted",
                 whitespaceBreak: true
-            }).brightWhite);
+            }).america);
             break;
         default:
             console.log(figlet.textSync(req.body.inputText, {
