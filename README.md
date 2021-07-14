@@ -1,4 +1,4 @@
-# ASCII Manipulation
+# ASCII Manipulation 💾
 
 Convert your boring text to something cool! Use this web app to create ASCII version of your text in your favorite colors. Made with Node.js and Express.js :D <br>
 Dependencies: Express, Body Parser, Figlet, Colors.
@@ -23,13 +23,13 @@ Dependencies: Express, Body Parser, Figlet, Colors.
 
 # Screenshots 📸
 
-![GitHub is really cool! Image](https://user-images.githubusercontent.com/70312106/125479596-d4cbd93f-f9c4-47c3-a092-941f60d907a2.png)
+![ASCII is really awesome!](https://user-images.githubusercontent.com/70312106/125561709-22d234f1-dd5e-43ff-b6d4-6f729893b07d.png)
 ------
-![Node command to start the server](https://user-images.githubusercontent.com/70312106/125478881-65848c09-8a03-4f3d-b7ed-037ea98e9c2f.png)
+![Start server with node](https://user-images.githubusercontent.com/70312106/125561289-02c24eb5-dd2c-4814-9d54-4f372e1d290c.png)
 -------
-![Main GUI of the project](https://user-images.githubusercontent.com/70312106/125479138-7a5ecb0b-3c54-4477-99a8-4cc2e39fa4bb.png)
-------
-![Console after ASCII version of the text has been printed](https://user-images.githubusercontent.com/70312106/125479254-73faebf3-8183-47aa-a5d1-d8c1ace6c2ef.png)
+![Give inputs to browser](https://user-images.githubusercontent.com/70312106/125561343-8ed9c64f-e423-4af3-863b-f018f4e5e739.png)
 -------
-![Response GUI after successful output](https://user-images.githubusercontent.com/70312106/125479354-d01d1d59-e306-479a-a6f8-0b47a410f14c.png)
+![Output generated in console](https://user-images.githubusercontent.com/70312106/125561370-68582545-b412-4a91-9135-c14f152212fc.png)
+-------
+![Result page rendered in browser](https://user-images.githubusercontent.com/70312106/125561416-91bf0974-c79f-45aa-9c23-ba458c492cea.png)
 ------
