@@ -4,20 +4,61 @@ const bodyParser = require("body-parser");
 const figlet = require("figlet");
 var colors = require('colors');
 
-app.use(bodyParser.urlencoded({extended: true}));
- 
-app.get("/", function(req, res){
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 })
 
-app.post("/", function(req, res){
-    console.log(figlet.textSync(req.body.inputText, {
-        horizontalLayout: "fitted",
-        whitespaceBreak: true
-    }));
+
+app.post("/", function (req, res) {
+    switch (req.body.colorChoice) {
+        case "black":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).black);
+            break;
+        case "red":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).red);
+            break;
+        case "green":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).green);
+            break;
+        case "yellow":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).yellow);
+            break;
+        case "rainbow":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).rainbow);
+            break;
+        case "brightWhite":
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }).brightWhite);
+            break;
+        default:
+            console.log(figlet.textSync(req.body.inputText, {
+                horizontalLayout: "fitted",
+                whitespaceBreak: true
+            }));
+            break;
+    }
     res.sendFile(__dirname + "/result.html");
 })
 
-app.listen(3000, function(){
+app.listen(3000, function () {
     console.log("listening to port 3000...".red);
 })
