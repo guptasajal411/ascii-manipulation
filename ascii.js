@@ -5,6 +5,7 @@ const figlet = require("figlet");
 var colors = require('colors');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/"));
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
@@ -60,5 +61,5 @@ app.post("/", function (req, res) {
 })
 
 app.listen(3000, function () {
-    console.log("listening to port 3000...".red);
+    console.log("listening to port 3000...".yellow);
 })
